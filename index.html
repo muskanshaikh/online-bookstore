@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online book | Store</title>
+        <meta name="description" content="This is the description">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-center">
+             
+      
+              <img src=" img/logo.png" />
+
+                  </div>
+          </nav>
+          <!--end navbar-->
+      
+          <!--main-->
+      
+          <header class="hero">
+            <div class="banner">
+              <h1 class="banner-title">Books Collection</h1>
+              <button class="banner-btn" id="shop"><a href="#product">Shop Now</a></button>
+            </div>
+          </header>
+          <!--end main-->
+
+         
+        <section class="container content-section">
+            <h2 class="section-header" id="product">Our Products <input type="search" placeholder="Search product" id="searchid" onkeyup="searchproduct()"/>
+              
+            </h2>
+            
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Sherlock Holmes</span>
+                    <img class="shop-item-image" src="img/product1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>400</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">The Girl in Room 105 </span>
+                    <img class="shop-item-image" src="img/product2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>185</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">All the light we cannot see</span>
+                    <img class="shop-item-image" src="img/product5.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Wings of Fire</span>
+                    <img class="shop-item-image" src="img/product3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Believe in Yourself</span>
+                    <img class="shop-item-image" src="img/product4.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+               
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">Crystal Magic</span>
+                    <img class="shop-item-image" src="img/product6.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Brain in a Jar</span>
+                    <img class="shop-item-image" src="img/product7.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Freedom Boker</span>
+                    <img class="shop-item-image" src="img/product8.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Human Action</span>
+                    <img class="shop-item-image" src="img/product9.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="container content-section">
+           
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column"> PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price"> &#8377 0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+        <footer class="main-footer">
+            <p>Copyright & muskan 2020</p>
+        </footer>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+         
+          var mybutton = document.getElementById("myBtn");
+          
+        
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+      
+    </body>
+</html>
