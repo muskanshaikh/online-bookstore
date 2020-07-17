@@ -76,7 +76,7 @@ function removeCartItem(event) {
     
     buttonClicked.parentElement.parentElement.remove();
     updateCartTotal();
-    incartupdate();
+  incartupdate();
     
    
 
@@ -92,7 +92,9 @@ function incartupdate(event){
     var i;
     console.log(button);
        for(i=0;i<button.length;i++){ 
-        if (button[i].innerText == 'IN Cart') {
+
+       
+        if (button[i].innerText == 'IN CART') {
         button[i].classList.remove('btn-warning');
           button[i].classList.add('btn-primary');
           button[i].innerText="ADD TO CART";
@@ -117,12 +119,12 @@ function quantityChanged(event) {
 
 function addToCartClicked(event) {
     var button = event.target
-    console.log(button);
+   console.log(button);
 
     if(button.classList.contains('btn-primary')){
         button.classList.remove('btn-primary');
         button.classList.add('btn-warning');
-        button.innerText='IN Cart';
+        button.innerText='IN CART';
         button.style.backgroundColor="Yellow";
         button.disabled=true;
         
@@ -131,7 +133,7 @@ function addToCartClicked(event) {
     else{
         button.classList.remove('btn-warning');
         button.classList.add('btn-primary');
-        button.innerText='add to cart';
+        button.innerText='ADD TO CART';
        
 
         }
@@ -147,11 +149,15 @@ function addToCartClicked(event) {
 function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
+   
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
+           
+            alert('This item is already added to the cart');
+         
+
             return
         }
     }

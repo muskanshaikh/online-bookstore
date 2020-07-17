@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 body {
-    width: 100%;
+    max-width: 100% !important;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
@@ -105,7 +105,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 100px 40px;
 
     padding: 0 1.5em;
@@ -250,6 +250,7 @@ display: inherit;
 
 .shop-item-price {
     flex-grow: 1;
+  display: inherit;
     color: #333;
 }
 
@@ -379,7 +380,7 @@ display: inherit;
 
    padding:15px;
    width:300px;
-  float: right;
+ float:right;
    justify-content: center;
    text-align: center;
     border:1px solid black;
@@ -390,6 +391,20 @@ display: inherit;
 
   }
 
+  @media screen and (min-width: 550px) {
+    #searchid {
+      margin: auto;
+    }
+   
+  }
+
+  @media only screen and (max-width: 768px){
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
+}
   #searchid:focus{
       border:2px solid var(--mainBlack);
   }
