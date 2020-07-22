@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Online book | Store</title>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-center">
+        <img src=" img/logo.png" />
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <a href="cart.html"> <i class="fas fa-cart-plus"></i></a>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <section class="container content-section" style="  max-width: 900px;
+    margin: 0 auto;">
+       <h2 class="section-header">CART</h2>
+       
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column"> PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="products">
+        </div>
+       
+        <button class="btn btn-primary btn-purchase" onclick="purchaseClicked()" type="button">PURCHASE</button>
+    </section>
+
+</section>
+    <script src="app.js"></script>
+  </body>
+</html>

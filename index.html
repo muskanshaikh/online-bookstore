@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css" />
-        <script src="store.js" async></script>
+        
     </head>
     <body>
         <nav class="navbar">
@@ -16,7 +16,13 @@
              
       
               <img src=" img/logo.png" />
-
+<div class="cart-btn">
+    <span class="nav-icon">
+        <a href="cart.html">
+        <i class="fas fa-cart-plus"></i></a>
+    </span>
+    <div class="cart-items">0</div>
+</div>
                   </div>
           </nav>
           <!--end navbar-->
@@ -36,95 +42,81 @@
             <h2 class="section-header" id="product">Our Products <input type="search" placeholder="Search product" id="searchid" onkeyup="searchproduct()"/>
               
             </h2>
-            
+
+           <!-- <button class="btn btn-primary sortbtn" type="button" id="add" onclick="sortprice()">Sort price</button>
+           --> 
             <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title">Sherlock Holmes</span>
-                    <img class="shop-item-image" src="img/product1.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>400</span>
-                        <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
-                    </div>
+              <div class="shop-item">
+                <span class="shop-item-title">Sherlock Holmes</span>
+                <img class="shop-item-image" src="img/SherlockHolmes.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>400</span>
+                    <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
                 </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">The Girl in Room 105 </span>
-                    <img class="shop-item-image" src="img/product2.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>185</span>
-                        <button class="btn btn-primary shop-item-button"type="button" id="add">ADD TO CART</button>
-                    </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">The Girl in Room 105 </span>
+                <img class="shop-item-image" src="img/TheGirlinRoom105.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>185</span>
+                    <button class="btn btn-primary shop-item-button"type="button" id="add">ADD TO CART</button>
                 </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">All the light we <br>cannot see</span>
-                    <img class="shop-item-image" src="img/product5.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
-                        <button class="btn btn-primary shop-item-button" type="button"id="add">ADD TO CART</button>
-                    </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">All the light we <br>cannot see</span>
+                <img class="shop-item-image" src="img/Allthelightwecannotsee.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                    <button class="btn btn-primary shop-item-button" type="button"id="add">ADD TO CART</button>
                 </div>
-               
-                <div class="shop-item">
-                    <span class="shop-item-title">Believe in Yourself</span>
-                    <img class="shop-item-image" src="img/product4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
-                        <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
-                    </div>
+            </div>
+           
+            <div class="shop-item">
+                <span class="shop-item-title">Believe in Yourself</span>
+                <img class="shop-item-image" src="img/BelieveinYourself.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                    <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
                 </div>
-               
-                
-                <div class="shop-item">
-                    <span class="shop-item-title">Crystal Magic</span>
-                    <img class="shop-item-image" src="img/product6.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
-                        <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
-                    </div>
+            </div>
+           
+            
+            <div class="shop-item">
+                <span class="shop-item-title">Crystal Magic</span>
+                <img class="shop-item-image" src="img/CrystalMagic.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                    <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
                 </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Brain in a Jar</span>
-                    <img class="shop-item-image" src="img/product7.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
-                        <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
-                    </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Brain in a Jar</span>
+                <img class="shop-item-image" src="img/BraininaJar.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                    <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
                 </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Freedom Boker</span>
-                    <img class="shop-item-image" src="img/product8.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
-                        <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
-                    </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Freedom Boker</span>
+                <img class="shop-item-image" src="img/FreedomBoker.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                    <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
                 </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Human Action</span>
-                    <img class="shop-item-image" src="img/product9.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
-                        <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
-                    </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Human Action</span>
+                <img class="shop-item-image" src="img/HumanAction.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"><i class="fa fa-inr" aria-hidden="true"></i>150</span>
+                    <button class="btn btn-primary shop-item-button" type="button" id="add">ADD TO CART</button>
                 </div>
+            </div>
             </div>
         </section>
     
-        <section class="container content-section" style="  max-width: 900px;
-        margin: 0 auto;">
-           
-            <h2 class="section-header">CART</h2>
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column"> PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-            </div>
-            <div class="cart-items">
-            </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price"> &#8377 0</span>
-            </div>
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-        </section>
+       
 
         <footer class="main-footer">
             <p>Copyright & muskan 2020</p>
@@ -152,6 +144,6 @@
             document.documentElement.scrollTop = 0;
           }
           </script>
-      
+      <script src="app.js" ></script>
     </body>
 </html>

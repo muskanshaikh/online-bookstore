@@ -193,3 +193,32 @@ function updateCartTotal() {
 }
 
 
+
+function sortprice(){
+   
+    var shopItems = document.getElementsByClassName('shop-items')[0]
+
+    var button = shopItems.getElementsByClassName('shop-item-price');
+    var arr=new Array(Number);
+   for(i=0;i<button.length;i++){
+       var price=shopItems.getElementsByClassName('shop-item-price')[i].innerText;
+        arr[i]=price
+       
+   }
+
+   numbersort=function(a,b){
+       return a-b;
+   };
+   arr.sort(numbersort);
+   for(var i=0;i<arr.length;i++){
+   
+    console.log(arr[i])
+    
+}
+
+
+   
+
+   
+}
+
