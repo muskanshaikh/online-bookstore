@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container" style="margin-bottom:20px;margin-top:80px;">
-        <form id="buyproduct">
+        <form id="buyproduct" action="order.html">
             <div class="form-data ">
                 <h3 style="font-weight:bold;color:black">Please update the details.</h3>
                 <div class="form-group">
@@ -35,7 +35,7 @@
                     <label for="state">State</label>
                     <input type="text" class="form-control" name="count" id="state" placeholder="Enter state" required="">
                 </div>
-                <button class="btn btn-primary deliver" onclick="deliverbtn()">Deliver to this Address</button>
+                <button class="btn btn-primary deliver" >Deliver to this Address</button>
             </div>
         </form>
     </div>
@@ -43,11 +43,7 @@
 
 
 
-function deliverbtn(){
 
-    window.location.href="order.html"
-    
-}
     </script>
 </body>
 </html>
