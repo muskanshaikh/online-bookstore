@@ -26,13 +26,7 @@ let Products=[
         inCart:0
     },
 
-    {
-
-        name:'Believe in Yourself',
-        tag:'BelieveinYourself',
-        price:'200',
-        inCart:0
-    },
+   
 
     {
 
@@ -65,6 +59,34 @@ let Products=[
         price:'100',
         inCart:0
     },
+    {
+
+        name:'Bill gates',
+        tag:'Billgates',
+        price:'160',
+        inCart:0
+    },
+    {
+
+        name:'Heldi',
+        tag:'Heldi',
+        price:'199',
+        inCart:0
+    },
+    {
+
+        name:'Great Expectation',
+        tag:'GreatExpectation',
+        price:'150',
+        inCart:0
+    },
+    {
+
+        name:'Missing',
+        tag:'missing',
+        price:'40',
+        inCart:0
+    },
 
 ]
 
@@ -82,22 +104,7 @@ for(let i=0;i<carts.length;i++){
 
 }
 
-function searchproduct(){
-    var searchbtn=document.getElementById('searchid').value.toUpperCase();
-   
-   var search=document.getElementsByClassName('shop-item');
-   for(var i=0;i<search.length;i++){
-       var a=search[i].getElementsByClassName('shop-item-title')[0];
-       if(a.innerHTML.toUpperCase().indexOf(searchbtn)>-1){
-           search[i].style.display="";
-       }
-       else{
-        search[i].style.display="none";
-       }
-       
-   }
-    
-}
+
 
 
 function onLoadCartNumbers(){
@@ -287,9 +294,25 @@ function purchaseClicked() {
 
     
 }
+function searchproduct(){
+    var searchbtn=document.getElementById('searchid').value.toUpperCase();
+   
+   var search=document.getElementsByClassName('shop-item');
+   for(var i=0;i<search.length;i++){
+       var a=search[i].getElementsByClassName('shop-item-title')[0];
+       
+       if(a.innerHTML.toUpperCase().indexOf(searchbtn)>-1){
+           search[i].style.display="";
+       }
+       else{
+        search[i].style.display="none";
+       }
+       
+   }
+    
+}
 
-
-/*function sortprice(Products){
+function sortprice(Products){
    let product=localStorage.getItem("Products");
     var shopItems = document.getElementsByClassName('shop-items')[0]
 
@@ -318,11 +341,11 @@ function sortby(array,sort,desc){
         if(a[sort]<b[sort]) return 1;
         return 0;
     });
-    displaypro(sorting);
+  console.log(sorting);
 }
 
 
-function displaypro(array){
+/*function displaypro(array){
     
     let final=JSON.stringify(array);
     

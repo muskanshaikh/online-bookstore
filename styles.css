@@ -428,6 +428,22 @@ display: inherit;
   }
 
 
+  #pagination{
+    margin: auto;
+    width: 300px;
+    margin-top:-72px;
+    margin-bottom: 20px;
+  }
+  #pagination a {
+    color: black;
+    padding: 8px 6px;
+    text-decoration: none;
+   
+  }
+  
+
+  
+ 
 
 
 
