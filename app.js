@@ -287,8 +287,16 @@ function displaycount(){
 }
 function purchaseClicked() {
   
-   
+    let cartItems=localStorage.getItem("cartNumbers");
+    cartItems=JSON.parse(cartItems);
+    if(cartItems==0){
+        alert("please buy product");
+    }
+    else{
+
+    
     window.location.href="form.html";
+    }
     
 
 
