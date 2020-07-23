@@ -45,7 +45,7 @@
 
  <!--<button class="btn btn-primary sortbtn" type="button" id="add" onclick="sortprice()">Sort price</button>
            
- -->      <div class="shop-items">
+ -->      <div class="shop-items" id="firstpage">
               <div class="shop-item">
                 <span class="shop-item-title">Sherlock Holmes</span>
                 <img class="shop-item-image" src="img/SherlockHolmes.jpg">
@@ -222,37 +222,48 @@
         <footer class="main-footer">
             <p>Copyright & muskan 2020</p>
         </footer>
-
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <a id="button" onclick="topFunction()"  title="Go to top"></a>
+        
         <script>
 
             var x=document.getElementById('nextpage');
  x.style.display="none";
  
  
+ var y=document.getElementById('firstpage');
 
+ 
 
             function showPage(id){
                 var totalpage=2
-                for (let index = 0; index < totalpage; index++) {
+                for (let index = 1; index < totalpage; index++) {
                   if(document.getElementById('page'+index))
                  document.getElementById(`page`+index).style.display='none'; 
-                 x.style.display='none';  
                 }
-                if(document.getElementById('page'+id))
+                if(document.getElementById('page'+id)){
 
                 document.getElementById(`page`+id).style.display='block'; 
+               if(id==1){
+                   x.style.display='none';
+                   y.style.display='grid';
+               }
+               else{
                 x.style.display='grid';
+                   y.style.display='none'; 
+               }
+               
+               
 
 
             }
-
+        }
+          
           
         </script>
         
         <script>
          
-          var mybutton = document.getElementById("myBtn");
+          var mybutton = document.getElementById("button");
           
         
           window.onscroll = function() {scrollFunction()};
