@@ -412,7 +412,8 @@ display: inherit;
 
   #pagination{
     margin: auto;
-    width: 300px;
+   width:300px;
+   text-align: center;
     margin-top:-72px;
     margin-bottom: 20px;
   }
@@ -434,7 +435,7 @@ display: inherit;
     height: 50px;
     text-align: center;
     border-radius: 4px;
-    margin: 30px;
+    margin: -10px 10px;
     position: fixed;
     bottom: 20px;
     right: 10px;
