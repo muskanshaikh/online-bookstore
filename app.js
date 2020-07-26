@@ -302,13 +302,33 @@ function purchaseClicked() {
 
     
 }
+
+/*let search = document.getElementById('searchid');
+search.addEventListener("input", function(){
+
+    let inputVal = search.value.toLowerCase();
+
+    console.log('Input event fired!', inputVal);
+    let noteCards = document.getElementsByClassName('shop-item');
+    Array.from(noteCards).forEach(function(element){
+        let cardTxt = element.getElementsByTagName("span")[0].innerText;
+        if(cardTxt.includes(inputVal)){
+            element.style.display = "block";
+        }
+        else{
+            element.style.display = "none";
+        }
+        // console.log(cardTxt);
+    })
+})*/
+
 function searchproduct(){
     var searchbtn=document.getElementById('searchid').value.toUpperCase();
    
    var search=document.getElementsByClassName('shop-item');
    for(var i=0;i<search.length;i++){
        var a=search[i].getElementsByClassName('shop-item-title')[0];
-       
+       console.log(a.innerHTML);
        if(a.innerHTML.toUpperCase().indexOf(searchbtn)>-1){
            search[i].style.display="";
        }
