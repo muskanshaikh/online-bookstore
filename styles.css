@@ -20,7 +20,6 @@
 
 body {
     max-width: 100% !important;
-    max-height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
@@ -30,119 +29,6 @@ body {
 
 }
 
-
-
-.fly-up{
-    animation: fadeInLeft .9s ease-out forwards;
-    transform: translate3d(3000px,0,0);
-  }
-
-.web-title{
-      animation: slideInUp .6s ease-out forwards;
-    transform: translate3d(300px,0,0);
-
-
-}
-
-
-*{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-body{
-  font-family: montserrat;
-}
-nav{
-  background: var(--primaryColor);
-  height: 80px;
-  width: 100%;
-}
-label.logo{
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav ul li a{
-  color: #8C2416;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-a.active,a:hover{
-  background: #3B170B;
-  transition: .5s;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-@media (max-width: 952px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover,a.active{
-    background: none;
-    color: #0082e6;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-}
-section{
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-}
 
 
 
@@ -170,8 +56,6 @@ section{
   }
   .nav-icon {
     font-size: 1.5rem;
-    padding-top: 5px;
-    padding-left: 10px;
   }
   .cart-btn {
     position: relative;
@@ -188,9 +72,10 @@ section{
   }
   /* --------------- End of Navbar ---------------- */
 
+  /* --------------- Hero ---------------- */
 .hero {
     min-height: calc(100vh - 60px);/*subtract height of navbar*/
-    background: url("img/bookstore.jpg") center/cover no-repeat;
+    background: url("img//hero.jpeg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,6 +111,8 @@ section{
       text-decoration: none;
       color: #a05b32;
   }
+  /* --------------- End of Hero ---------------- */
+
   
 
 
@@ -311,6 +198,7 @@ display: inherit;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
+
     
 }
 
@@ -337,15 +225,6 @@ display: inherit;
    height: 250px;
     
 }
-
-
-
-.shop-item-image:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-}
-
 
 .shop-item-details {
     display: flex;
@@ -494,7 +373,7 @@ display: inherit;
 
    padding:15px;
    width:380px;
-   float:right;
+ float:right;
    justify-content: center;
    text-align: center;
     border:1px solid black;
@@ -527,8 +406,6 @@ display: inherit;
       text-align: center;
       background-color: gray;
       padding: 30px;
-
-
   }
 
   
@@ -591,6 +468,5 @@ display: inherit;
     }
 
   }
-
 
 
